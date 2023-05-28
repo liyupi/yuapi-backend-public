@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- @author <a href="https://github.com/liyupi">程序员鱼皮</a> -->
+<!-- @from <a href="https://yupi.icu">编程导航知识星球</a> -->
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yupi.project.mapper.UserInterfaceInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.yupi.yuapicommon.model.entity.UserInterfaceInfo">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="userId" column="userId" jdbcType="BIGINT"/>
+            <result property="interfaceInfoId" column="interfaceInfoId" jdbcType="BIGINT"/>
+            <result property="totalNum" column="totalNum" jdbcType="INTEGER"/>
+            <result property="leftNum" column="leftNum" jdbcType="INTEGER"/>
+            <result property="status" column="status" jdbcType="INTEGER"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
+    </resultMap>
+
+<!-- [加入学习圈](https://t.zsxq.com/0emozsIJh) 从 0 到 1 项目实战，经验拉满！10+ 原创项目手把手教程、1000+ 项目经验笔记、7 日项目提升训练营、60+ 编程经验分享直播-->
+
+    <sql id="Base_Column_List">
+        id,userId,interfaceInfoId,
+        totalNum,leftNum,status,
+        createTime,updateTime,isDelete
+    </sql>
+    <select id="listTopInvokeInterfaceInfo" resultType="com.yupi.yuapicommon.model.entity.UserInterfaceInfo">
+        select interfaceInfoId, sum(totalNum) as totalNum from user_interface_info group by interfaceInfoId
+        order by totalNum desc limit #{limit};
+    </select>
+</mapper>
