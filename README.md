@@ -2,15 +2,15 @@
 
 > 作者：[程序员鱼皮](https://github.com/liyupi)
 
-本项目为 [编程导航知识星球](https://yupi.icu) 的原创全栈项目，后端代码开源。
+本项目为 [编程导航知识星球](https://yuyuanweb.feishu.cn/wiki/VC1qwmX9diCBK3kidyec74vFnde) 的原创全栈项目，后端代码开源。
 
-[加入星球](https://yupi.icu) 可获得该项目从 0 到 1 的完整视频教程 + 源码 + 笔记 + 答疑 + 简历写法。
+[加入星球](https://yuyuanweb.feishu.cn/wiki/VC1qwmX9diCBK3kidyec74vFnde) 可获得该项目从 0 到 1 的完整视频教程 + 源码 + 笔记 + 答疑 + 简历写法 + 面试题解。
 
 ![加入编程导航](./doc/加入编程导航.jpeg)
 
 ## 项目简介
 
-[编程导航知识星球](https://yupi.icu) 原创项目，一个提供 API 接口供开发者调用的平台。
+[编程导航知识星球](https://yuyuanweb.feishu.cn/wiki/VC1qwmX9diCBK3kidyec74vFnde) 原创项目，一个提供 API 接口供开发者调用的平台。
 
 管理员可以接入并发布接口，统计分析各接口调用情况；用户可以注册登录并开通接口调用权限，然后可以浏览接口及在线调试，还能使用客户端 SDK 轻松在代码中调用接口。
 
